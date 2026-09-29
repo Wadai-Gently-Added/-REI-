@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>戻 -REI-</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1 data-i18n="appTitle"></h1>
+  <p data-i18n="tagline"></p>
+</header>
+<main>
+  <button id="btn-locate" data-i18n="btnLocate"></button>
+  <p id="status" role="status"></p>
+  <div class="settings">
+    <label><span data-i18n="labelLanguage"></span> <select id="sel-lang"></select></label>
+    <label><span data-i18n="labelNavApp"></span> <select id="sel-app"></select></label>
+    <label><span data-i18n="labelMapTile"></span> <select id="sel-tile"></select></label>
+  </div>
+  <div id="map"></div>
+  <ul id="list"></ul>
+</main>
+<footer><span data-i18n="footerData"></span>: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script src="language/ja.js"></script>
+<script src="language/en.js"></script>
+<script src="js/strings.js"></script>
+<script src="js/overpass.js"></script>
+<script src="js/mapapps.js"></script>
+<script src="js/render.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

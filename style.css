@@ -1,0 +1,18 @@
+/* 見た目はこのファイルだけ。ChatGPT/Geminiに渡して着せ替えする用 */
+:root { --bg:#fff; --fg:#222; --accent:#2a6; --card:#f4f4f4; }
+* { box-sizing: border-box; }
+body { margin:0; font-family:system-ui,sans-serif; background:var(--bg); color:var(--fg); }
+header, main, footer { max-width:640px; margin:0 auto; padding:12px 16px; }
+h1 { margin:0; font-size:1.4rem; }
+button { font-size:1rem; padding:12px 16px; border:0; border-radius:8px; background:var(--accent); color:#fff; }
+.settings { display:flex; gap:12px; flex-wrap:wrap; margin:12px 0; }
+#map { height:260px; border-radius:8px; margin-bottom:12px; }
+#list { list-style:none; padding:0; margin:0; }
+.item { background:var(--card); border-radius:8px; padding:10px 12px; margin-bottom:8px; }
+.item .type { font-size:.8rem; }
+.item .name { font-size:1.1rem; font-weight:bold; }
+.item .dist { margin-left:8px; }
+.item button { margin-top:6px; padding:8px 12px; }
+.type-gate .type { color:#b40; }
+.type-exit .type { color:#06a; }
+footer { font-size:.8rem; }
