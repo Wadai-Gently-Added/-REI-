@@ -1,0 +1,42 @@
+// language/ja.js — 戻 -REI- 日本語の文言データ
+// 言語追加: このファイルを丸ごとコピーして language/xx.js を作り、全値を翻訳 → js/strings.js の LANGUAGES に登録
+const LANG_JA = {
+  meta: { name: '日本語', code: 'ja' },
+  common: {
+    appTitle: '戻 -REI-',
+    tagline: 'いまいる場所から、いちばん近い出口と改札へ',
+    btnLocate: '現在地から探す',
+    labelNavApp: 'ナビアプリ',
+    labelMapTile: '地図',
+    labelLanguage: '言語',
+    statusLocating: '現在地を取得中…',
+    statusSearching: '近くの出口・改札を検索中…',
+    statusNone: (m)=> `${m}m以内に見つかりませんでした`,
+    errorPrefix: (msg)=> `うまくいきませんでした: ${msg}`,
+    errorGpsDenied: '位置情報を許可してください',
+    typeGate: '改札',
+    typeExit: '出口',
+    typeStation: '駅',
+    btnGuide: 'ここへ案内',
+    popupHere: '現在地',
+    distance: (m)=> `${m} m`,
+    footerData: 'データ',
+    unnamed: '（名前なし）',
+    warnAccuracy: (m)=> `現在地の誤差が大きいです（約${m}m）。もう一度探してみてください。`,
+    noExitData: 'この駅の出口・改札データは未収録です。駅の位置から地図アプリで案内できます。',
+    noteStraight: '距離は直線距離です。構内の移動・壁・階の違いは含みません。バリアフリー情報はOSM編集者の記載分のみなので、駅の案内も確認してください。',
+    wcYes: '車椅子 ✅ 利用可',
+    wcLimited: '車椅子 △ 一部制限',
+    wcNo: '車椅子 ❌ 不可',
+    wcUnknown: '車椅子 ❓ 未確認',
+    privacyNote: '現在地は、近くの出口を探すためにOpenStreetMapの公開サーバー（Overpass）へ送られます（約100m単位に丸めて送信）。開発者には送られず、保存もしません。',
+    btnRetry: '再試行',
+    errorServer: 'サーバーに接続できませんでした。混雑時によくあります。もう一度お試しください。',
+    errorLocate: '現在地を取得できませんでした（駅の地下では取得しにくいことがあります）。',
+    mockActive: 'テスト用の位置を使っています。',
+    noteDisclaimer: '駅・出口・改札の情報はOpenStreetMapの編集者の記載に基づき、誤りや欠落を含む可能性があります。必ず駅の案内表示・係員の案内もご確認ください。',
+    tileOsm: 'OSM標準',
+    tileStd: '地理院 標準',
+    tilePale: '地理院 淡色'
+  }
+};

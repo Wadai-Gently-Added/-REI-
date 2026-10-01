@@ -16,3 +16,9 @@ button { font-size:1rem; padding:12px 16px; border:0; border-radius:8px; backgro
 .type-gate .type { color:#b40; }
 .type-exit .type { color:#06a; }
 footer { font-size:.8rem; }
+.item .wc { font-size:.85rem; margin-top:2px; }
+.wc-unknown { color:#777; }
+.wc-no { color:#b00; }
+.note { font-size:.8rem; color:#555; margin-bottom:8px; }
+.item .main { display:flex; align-items:baseline; gap:8px; flex-wrap:wrap; }
+.item .ref { font-size:1.6rem; font-weight:bold; background:#fc0; color:#111; border-radius:6px; padding:0 10px; }
